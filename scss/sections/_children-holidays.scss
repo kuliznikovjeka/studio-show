@@ -1,5 +1,8 @@
 .children-holidays {
-	padding: 80px 0px;
+	padding: 50px 0px;
+	@media (max-width: 480px) {
+		padding: 30px 0px;
+	}
 	// .children-holidays__container
 
 	&__container {
@@ -30,6 +33,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 30px;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 20px;
 		}
 
 		@media (max-width: 767px) {
@@ -63,26 +70,56 @@
 		}
 	}
 
+	// .children-holidays__img-text-block
+
+	&__img-text-block {
+		position: relative;
+		text-align: center;
+	}
+
 	// .children-holidays__title
 
 	&__title {
+		position: absolute;
+		top: 30%;
+		left: 18%;
 		font-weight: 700;
 		font-size: 50px;
 		text-transform: uppercase;
 		text-align: center;
 		color: var(--dark-green-color);
-		height: 300px;
-		padding-top: 100px;
-		background: url("../../img/children-holidays/cloud.png") 0 0 / cover no-repeat;
+
 		&:not(:last-child) {
 			margin-bottom: 25px;
 		}
+
+		@media (max-width: 767px) {
+			font-size: 42px;
+		}
 		@media (max-width: 992px) {
-			padding-top: 200px;
-			height: 450px;
+			left: 30%;
+		}
+		@media (max-width: 650px) {
+			left: 25%;
 		}
 		@media (max-width: 550px) {
 			font-size: 36px;
+		}
+		@media (max-width: 480px) {
+			left: 20%;
+			font-size: 32px;
+		}
+		@media (max-width: 380px) {
+			left: 15%;
+			font-size: 28px;
+		}
+	}
+
+	// .children-holidays__img-cloud
+	&__img-cloud {
+		img {
+			max-width: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -100,6 +137,12 @@
 		}
 		@media (max-width: 992px) {
 			font-size: 36px;
+		}
+		@media (max-width: 767px) {
+			font-size: 32px;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
 		}
 		@media (max-width: 480px) {
 			font-size: 24px;
@@ -126,6 +169,13 @@
 			padding: 15px 15px 15px 20px;
 			img {
 				width: 30px;
+			}
+		}
+		@media (max-width: 360px) {
+			font-size: 16px;
+			padding: 15px 10px;
+			img {
+				width: 25px;
 			}
 		}
 	}
