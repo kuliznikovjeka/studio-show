@@ -1,8 +1,8 @@
 .hero {
 	padding: 50px 0px;
 	background:
-		url("../../img/hero/decor.png") 0 0 / cover no-repeat,
-		url("../../img/hero/main-bg.jpg") 0 0 / cover no-repeat;
+		url("../img/hero/decor.png") 0 0 / cover no-repeat,
+		url("../img/hero/main-bg.jpg") 0 0 / cover no-repeat;
 
 	// .hero__big-container
 	&__big-container {
@@ -81,7 +81,7 @@
 		@media (min-width: 993px) {
 			&::after {
 				content: "";
-				background: url("../../img/hero/microphone.png") 0 0 no-repeat;
+				background: url("../img/hero/microphone.png") 0 0 no-repeat;
 				position: absolute;
 				width: 290px;
 				height: 390px;
@@ -166,4 +166,3 @@
 		}
 	}
 }
-
