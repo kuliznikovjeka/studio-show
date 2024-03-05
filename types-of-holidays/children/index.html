@@ -25,9 +25,12 @@
                 <a href="#" class="item-types-of-holidays__button button"
                   >забронировать</a
                 >
-                <a href="#" class="item-types-of-holidays__link-about"
-                  >узнать подробнее</a
+                <button
+                  data-path="k-pop-modal"
+                  class="item-types-of-holidays__link-about"
                 >
+                  узнать подробнее
+                </button>
               </article>
               <article class="types-of-holidays__item item-types-of-holidays">
                 <div class="item-types-of-holidays__img">
@@ -163,7 +166,41 @@
             </div>
           </div>
         </div>
+        <div class="modals">
+          <div class="modal-overlay">
+            <div class="modal party-modal" data-target="k-pop-modal">
+              <div class="party-modal__row">
+                <button class="party-modal__button-close">
+                  <img
+                    src="./img/close-icon.svg"
+                    alt="Иконка кнопки закрытия модального окна"
+                  />
+                </button>
+              </div>
+              <h2 class="party-modal__title">K-POP ВЕЧЕРИНКА</h2>
+              <div class="party-modal__img">
+                <img src="./img/01.jpg" alt="key-pop" />
+              </div>
+              <p class="party-modal__description">
+                Если с концертами не приезжают к нам, значит нужно устроить его
+                самим🔥
+              </p>
+              <p class="party-modal__description">
+                Зови близких друзей на свою k-pop вечеринку , а мы поможем её
+                сделать максимально заряженной и атмосферной 😍
+              </p>
+              <p class="party-modal__characteristic">Длительность: 1 час</p>
+              <p class="party-modal__characteristic">Цена в студии - 5 000₽</p>
+              <p class="party-modal__characteristic">Цена с выездом 4 000₽</p>
+              <a href="#" class="party-modal__button button">
+                забронировать
+                <span><img src="./img/arr.svg" alt="Иконка стрелочки" /></span>
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
+    <script src="../../js/modals.js"></script>
   </body>
 </html>
