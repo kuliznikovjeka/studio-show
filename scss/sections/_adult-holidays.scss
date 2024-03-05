@@ -1,0 +1,147 @@
+.adult-holidays {
+	padding: 50px 0px;
+	@media (max-width: 480px) {
+		padding: 30px 0px;
+	}
+	// .adult-holidays__container
+
+	&__container {
+	}
+
+	// .adult-holidays__title
+
+	&__title {
+		text-align: center;
+		@media (min-width: 993px) {
+			text-align: right;
+		}
+
+		color: var(--orange-color);
+		font-weight: 700;
+		font-size: 50px;
+		line-height: 120%;
+		text-transform: uppercase;
+
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 42px;
+		}
+		@media (max-width: 550px) {
+			font-size: 36px;
+		}
+		@media (max-width: 480px) {
+			font-size: 32px;
+		}
+		@media (max-width: 380px) {
+			font-size: 28px;
+		}
+	}
+
+	&__text-block {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+		@media (max-width: 767px) {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	// .adult-holidays__description
+
+	&__description {
+		color: var(--dark-white-color);
+		font-size: 24px;
+		font-weight: 600;
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 20px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 18px;
+		}
+	}
+
+	// .adult-holidays__row
+
+	&__row {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		@media (max-width: 992px) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+
+	// .adult-holidays__column
+
+	&__column {
+		&:first-child {
+			flex: 0 1 55%;
+		}
+		&:last-child {
+			flex: 0 0 45%;
+		}
+	}
+
+	// .adult-holidays__img
+
+	&__img {
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .adult-holidays__text
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: 992px) {
+		}
+	}
+
+	// .adult-holidays__button
+
+	&__button {
+		text-wrap: nowrap;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 12px;
+		padding: 20px 20px 20px 30px;
+		align-self: stretch;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+		@media (max-width: 767px) {
+			font-size: 18px;
+		}
+		@media (max-width: 480px) {
+			padding: 15px 15px 15px 20px;
+			img {
+				width: 30px;
+			}
+		}
+		@media (max-width: 360px) {
+			font-size: 16px;
+			padding: 15px 10px;
+			img {
+				width: 25px;
+			}
+		}
+	}
+}
