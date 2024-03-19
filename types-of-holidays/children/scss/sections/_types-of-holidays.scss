@@ -1,0 +1,142 @@
+.types-of-holidays {
+	background: url("../img/bg.jpg") 0 0 / cover no-repeat;
+	padding: 100px 0px;
+
+	&_black-bg {
+		background: var(--black-color);
+	}
+
+	@media (max-width: 767px) {
+		padding: 50px 0px;
+	}
+
+	// .types-of-holidays__container
+
+	&__container {
+	}
+
+	// .types-of-holidays__title
+
+	&__title {
+		text-align: center;
+		-webkit-text-stroke: 0px var(--white-color);
+
+		&_pink {
+			color: var(--pink-color);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 90px;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+		@media (max-width: 480px) {
+			font-size: 70px;
+		}
+	}
+
+	// .types-of-holidays__row
+
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 30px;
+	}
+
+	// .types-of-holidays__item
+
+	&__item {
+	}
+}
+
+.item-types-of-holidays {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	padding: 30px;
+	background-color: var(--white-color);
+	@media (max-width: 550px) {
+		padding: 15px;
+	}
+	// .item-types-of-holidays__img
+
+	&__img {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		img {
+			max-width: 100%;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+		@media (max-width: 480px) {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	// .item-types-of-holidays__label
+
+	&__label {
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: var(--dark-green-color);
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	// .item-types-of-holidays__description
+
+	&__description {
+		flex: 1 1 auto;
+		color: var(--black-color);
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: 480px) {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	// .item-types-of-holidays__button
+
+	&__button {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: 1180px) {
+			font-size: 20px;
+		}
+		@media (max-width: 480px) {
+			font-size: 18px;
+			padding: 15px;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	// .item-types-of-holidays__link-about
+
+	&__link-about {
+		background: transparent;
+		font-size: 24px;
+		color: var(--black-color);
+		@media (max-width: 480px) {
+			font-size: 18px;
+		}
+	}
+}

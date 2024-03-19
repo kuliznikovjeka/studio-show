@@ -1,7 +1,7 @@
 .authorization {
 	height: 100vh;
 	overflow-y: auto;
-	background: url("../authorization/img/bg.jpg") 0 0 / cover no-repeat;
+	background: url("../img/bg.jpg") 0 0 / cover no-repeat;
 	padding: 60px 0px;
 
 	&_black-bg {
@@ -31,11 +31,20 @@
 			margin-bottom: 30px;
 		}
 
-		@media (max-width: 767px) {
-			font-size: 90px;
+		@media (max-width: 992px) {
+			font-size: 100px;
 		}
-		@media (max-width: 480px) {
+
+		@media (max-width: 767px) {
 			font-size: 70px;
+		}
+		
+		@media (max-width: 550px) {
+			font-size: 50px;
+		}
+
+		@media (max-width: 420px) {
+			font-size: 40px;
 		}
 	}
 }
