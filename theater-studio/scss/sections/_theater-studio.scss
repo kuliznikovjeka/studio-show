@@ -1,0 +1,145 @@
+.theater-studio {
+	background: url("../img/bg.jpg") 0 0 / cover no-repeat;
+	padding: 100px 0px;
+
+	@media (max-width: 767px) {
+		padding: 50px 0px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 30px 0px;
+	}
+	// .theater-studio__container
+
+	&__container {
+	}
+
+	// .theater-studio__title
+
+	&__title {
+		-webkit-text-stroke: 0px var(--white-color);
+		color: var(--pink-color);
+		text-align: center;
+
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 90px;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+		@media (max-width: 480px) {
+			font-size: 70px;
+		}
+		@media (max-width: 400px) {
+			font-size: 50px;
+		}
+	}
+
+	// .theater-studio__row
+
+	&__row {
+		display: flex;
+		gap: 30px;
+		@media (max-width: 767px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	// .theater-studio__column
+
+	&__column {
+		width: 100%;
+	}
+
+	// .theater-studio__item
+
+	&__item {
+	}
+}
+
+.item-theater-studio {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	background-color: var(--white-color);
+	padding: 40px 60px;
+	height: 100%;
+
+	@media (max-width: 992px) {
+		padding: 30px;
+	}
+	@media (max-width: 480px) {
+		padding: 15px;
+	}
+
+	// .item-theater-studio__img
+
+	&__img {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+
+		img {
+			max-width: 100%;
+			object-fit: cover;
+			border-radius: 20px;
+		}
+	}
+
+	// .item-theater-studio__label
+
+	&__label {
+		color: var(--pink-color);
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 20px;
+		}
+	}
+
+	// .item-theater-studio__text
+
+	&__text {
+		color: var(--black-color);
+		flex: 1 1 100%;
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	// .item-theater-studio__price
+
+	&__price {
+		display: block;
+		text-transform: uppercase;
+		color: var(--light-beruz-color);
+		font-weight: 700;
+		font-size: 24px;
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 20px;
+		}
+	}
+
+	// .item-theater-studio__button
+
+	&__button {
+		@media (max-width: 480px) {
+			font-size: 20px;
+		}
+	}
+}

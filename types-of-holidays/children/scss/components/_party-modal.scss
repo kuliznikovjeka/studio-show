@@ -31,7 +31,6 @@
 	border-radius: 6px;
 	background-color: #fff;
 	max-width: 500px;
-	max-height: 1000px;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -48,9 +47,9 @@
 	}
 }
 .party-modal {
-	// .party-modal__row
 	overflow-y: auto;
 
+	// .party-modal__row
 	&__row {
 		display: flex;
 		justify-content: flex-end;
