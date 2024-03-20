@@ -31,9 +31,18 @@
 		}
 	}
 
-	// .footer__polici-of-confidantionality
+	// .footer__documents
+	&__documents {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
 
-	&__polici-of-confidantionality {
+	// .footer__document
+
+	&__document {
+		width: fit-content;
 		font-weight: 600;
 		font-size: 24px;
 		color: var(--white-color);
